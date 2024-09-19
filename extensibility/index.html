@@ -12,11 +12,11 @@
         <link rel="canonical" href="http://127.0.0.1:8000/extensibility/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-7.2.4">
     
     
       
-        <title>Introduction - PnP Modern Search (v4)</title>
+        <title>Extensibility - PnP Modern Search (v4)</title>
       
     
     
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Extensibility
             
           </span>
         </div>
@@ -400,6 +400,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v3/" class="md-nav__link">
+        Version 3
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -505,11 +517,112 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="./" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Extensibility
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Extensibility
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-customizations" class="md-nav__link">
+    Basic customizations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-customizations" class="md-nav__link">
+    Advanced customizations
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced customizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequistes" class="md-nav__link">
+    Prerequistes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-extensions" class="md-nav__link">
+    Supported extensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-your-extensibility-library-with-a-web-part" class="md-nav__link">
+    Register your extensibility library with a Web Part
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-extensibility-library" class="md-nav__link">
+    Create an extensibility library
+  </a>
+  
+    <nav class="md-nav" aria-label="Create an extensibility library">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debug-a-library-component" class="md-nav__link">
+    Debug a library component
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-the-sharepoint-framework-context-and-services-in-a-library-component" class="md-nav__link">
+    Accessing the SharePoint Framework context and services in a library component
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -699,12 +812,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Introduction
+          Extensibility
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Introduction
+        Extensibility
       </a>
       
         
@@ -1036,7 +1149,7 @@
 </ul>
 <div class="admonition important">
 <p class="admonition-title">SPFx version</p>
-<p>The SPFx library project must use the same SPFx version as the main solution (currently <code>1.15.2</code>). Owherwise you may face issues at build time. See <a href="https://github.com/microsoft-search/pnp-modern-search/issues/1893">GitHub issue #1893</a></p>
+<p>The SPFx library project must use the same SPFx version as the main solution (check source code for current version). Owherwise you may face issues at build time. See <a href="https://github.com/microsoft-search/pnp-modern-search/issues/1893">GitHub issue #1893</a></p>
 </div>
 <h3 id="supported-extensions">Supported extensions<a class="headerlink" href="#supported-extensions" title="Permanent link">&para;</a></h3>
 <p>Each Web Part type in the solution supports several extensions or no extension at all. It means even your extensibility library contains all possible extensions, they won't be loaded if the Web Part does not support them.</p>
